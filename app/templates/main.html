@@ -1,0 +1,100 @@
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">7Wonders</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li class="active"><a href="/">Player Manager</a></li>
+      <li><a href="/score_sheet">Score Sheet</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="row">
+</div>
+
+<ul class="sidenav" id="mobile-demo">
+  <li class="active"><a href="/">Player Manager</a></li>
+  <li><a href="/score_sheet">Score Sheet</a></li>
+</ul>  
+
+<div class="container">
+  <div class="row">
+    <div class="col s2 offset-s4">
+      <h4>Add/Remove</h4>
+    </div>
+    <div class="col s2">
+      <button class="btn" onclick="continuePage();">Save</button>
+    </div>  
+  </div>
+  <div class="row">
+    <div class="col s4 offset-s4">
+      <p>
+        <label>
+          <input type="checkbox" id="abhiram" onchange="checkBoxChange(this)"/>
+          <span>Abhiram</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" id="arjun" onchange="checkBoxChange(this)"/>
+          <span>Arjun</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" id="ashlin" onchange="checkBoxChange(this)"/>
+          <span>Ashlin</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" id="sachin" onchange="checkBoxChange(this)"/>
+          <span>Sachin</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" id="sahu" onchange="checkBoxChange(this)"/>
+          <span>Sahu</span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" id="abhiram" onchange="checkBoxChange(this)"/>
+          <span>Vahini</span>
+        </label>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+      <div class="input-field col s4 offset-s4">
+          <input id="player-input" type="text">
+          <label for="player-input" onchange="addPlayerWrapper();">Player Name</label>
+      </div>
+      <div class="col s1">
+        <button class="btn" onclick="addPlayerWrapper();">Add</button>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col s4 offset-s4">
+      <div id="table-container">
+      </div>
+      <!-- <table id="player-table">
+        <tr>
+          <td>Idx</td>
+          <td>Name</td>
+        </tr>
+      </table> -->
+    </div>
+  </div>
+</div>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<script type=text/javascript src="{{ url_for('static',filename='js/main.js') }}"></script>

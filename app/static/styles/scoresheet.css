@@ -1,0 +1,41 @@
+.military{
+    background-color: #ff6b6b;
+}
+
+.civilian{
+    background-color: #1180e0;
+}
+
+.scientific{
+    background-color: #125008;
+}
+
+.commercial{
+    background-color: #fbff15;
+}
+
+.guild{
+    background-color: #d195fa;
+}
+
+.total{
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.player{
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.white-input{
+    color: white !important;
+}
+
+.black-input{
+    color: black !important;
+}
+
+#game-id {
+    font-weight: bold;
+}

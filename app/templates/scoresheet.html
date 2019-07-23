@@ -1,0 +1,63 @@
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/scoresheet.css') }}">
+
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">7Wonders</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="/">Player Manager</a></li>
+      <li class="active"><a href="/score_sheet">Score Sheet</a></li>
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="/">Player Manager</a></li>
+  <li class="active"><a href="/score_sheet">Score Sheet</a></li>
+</ul>
+
+<div class="row">
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col s2">
+        <span>GAME ID: </span><p id="game-id"></p>
+      </div>
+      <div class="col s2">
+          <button class="btn" onclick="computeTotals();">Compute Totals</button>
+      </div>
+    <!-- <div class="col s2">
+        <button class="btn" onclick="updateGame();">Update Game</button>
+    </div> -->
+    <div class="col s2">
+        <button class="btn" onclick="saveGame();">Save Game</button>
+    </div>
+    <div class="col s2">
+        <button class="btn" onclick="newGame();">New Game</button>
+    </div>
+    <div class="col s2">
+        <button class="btn" onclick="resetScores();">Reset Scores</button>
+    </div>
+    <!-- <div class="col s1">
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+    </div> -->
+  </div>
+  <div class="row">
+    <div id="table-container" class="col s12">
+        <table id="score-table">
+            
+        </table>
+    </div>
+  </div>  
+</div>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<script type=text/javascript src="{{ url_for('static',filename='js/scoresheet.js') }}"></script>
